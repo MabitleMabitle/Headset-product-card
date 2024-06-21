@@ -1,0 +1,222 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "kanit", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.background-container {
+  inline-size: 100%;
+  block-size: 100vh;
+  background-color: #575b67;
+  position: relative;
+  overflow: hidden;
+}
+
+/* ************************************************** */
+.background {
+  inline-size: 180rem;
+  block-size: 180rem;
+  border-radius: 50%;
+  background-color: #3b3f4b;
+  position: absolute;
+}
+.background-one {
+  inset-inline-start: -45%;
+  inset-block-start: -10%;
+}
+.background-two {
+  inset-inline-end: -15%;
+  inset-block-start: 35%;
+}
+/* *************************************************** */
+
+.preview {
+  inline-size: 120rem;
+  block-size: 60rem;
+  background-color: #5c5e66;
+  position: absolute;
+  inset-block-start: 50%;
+  inset-inline-start: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 1rem;
+  box-shadow: 0 1rem 6rem rgba(0, 0, 0, 0.4);
+}
+
+/* ********************************************************************************** */
+.preview-cover {
+  inline-size: 100%;
+  block-size: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.preview-background {
+  inline-size: 100%;
+  block-size: 200%;
+  background-color: #52555d;
+  position: absolute;
+  inset-inline-start: -55%;
+  inset-block-start: -50%;
+  transform: rotateZ(-40deg);
+  border-radius: 0 50% 50% 0;
+}
+/* ******************************************************************************* */
+
+.preview-heading {
+  position: absolute;
+  inset-block-start: 2%;
+  inset-inline-start: 45%;
+  font-size: 18rem;
+  letter-spacing: 3rem;
+  text-transform: uppercase;
+  color: #77797d;
+  opacity: 0.3;
+}
+
+.preview img {
+  position: absolute;
+  inset-block-start: 0%;
+  inset-inline-start: -18%;
+  inline-size: 90rem;
+}
+
+.shadow-one {
+  inline-size: 20rem;
+  block-size: 60%;
+  position: absolute;
+  inset-block-start: 40%;
+  inset-inline-start: 0%;
+  background: linear-gradient(
+    to right,
+    transparent,
+    rgba(0, 0, 0, 0.7),
+    transparent
+  );
+  border-radius: 0 50% 50% 0;
+  filter: blur(3rem);
+  opacity: 0.5;
+  transform: rotateY(30deg) rotateZ(45deg);
+}
+
+.shadow-two {
+  inline-size: 30rem;
+  block-size: 30rem;
+  position: absolute;
+  inset-block-start: 0%;
+  inset-inline-start: -10%;
+  background: linear-gradient(
+    to right,
+    transparent,
+    rgba(0, 0, 0, 0.7),
+    transparent
+  );
+  border-radius: 50%;
+  filter: blur(3rem);
+  opacity: 0.5;
+  transform: rotateX(30deg) rotateY(20deg);
+}
+
+.shadow-three {
+  inline-size: 55rem;
+  block-size: 15rem;
+  background: linear-gradient(
+    to right,
+    transparent,
+    rgba(0, 0, 0, 0.7),
+    transparent
+  );
+
+  filter: blur(5rem);
+  transform: translateY(-10rem) rotateY(50deg) translateX(-10rem) rotateX(60deg);
+}
+
+
+.preview-content {
+  position: absolute;
+  inset-block-start: 0;
+  inset-inline-end: 0;
+  inline-size: 50%;
+  block-size: 100%;
+  padding: 5rem;
+}
+
+.mini-heading {
+  margin-block-start: 6rem;
+  font-size: 5rem;
+  text-transform: uppercase;
+  background: linear-gradient(to right, #e03131, #ff8787 30%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+}
+
+.main-heading {
+  font-size: 7rem;
+  text-transform: uppercase;
+  color: #fff;
+  text-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+  margin-block-end: 5rem;
+  margin-inline-start: 3rem;
+}
+
+.subordinate-heading {
+  font-size: 1.6rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  color: #fff;
+  text-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+}
+
+.preview-content p {
+  font-size: 1.4rem;
+  color: #aaa;
+  line-height: 1.2;
+  font-weight: 300;
+  inline-size: 40rem;
+  margin-block-start: 1rem;
+  margin-block-end: 5rem;
+  margin-inline-start: 3rem;
+}
+
+.amount-background {
+  position: absolute;
+  inset-block-end: 5rem;
+  font-size: 12rem;
+  color: #77797d;
+  opacity: 0.5;
+}
+
+.main-amount {
+  position: absolute;
+  inset-block-end: 8rem;
+  inset-inline-start: 17rem;
+  font-size: 4rem;
+  color: #fff;
+  text-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+}
+.card-button {
+  position: absolute;
+  inset-block-end: 11rem;
+  inset-inline-end: 10rem;
+  inline-size: 20rem;
+  block-size: 5rem;
+  border-radius: 0.7rem;
+  border: none;
+  background: linear-gradient(to right, #e03131, #ff8787);
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  color: #fff;
+  letter-spacing: 0.1rem;
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+.card-button:active {
+  transform: translateY(-0.2rem);
+}
